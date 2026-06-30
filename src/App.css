@@ -136,6 +136,7 @@
 }
 
 .mail-box {
+  max-width: 1400px;
   margin: 0 auto;
   background: white;
   border: 1px solid #dddddd;
