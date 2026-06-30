@@ -16,12 +16,16 @@ function RegisterScreen() {
       return
     }
 
-    await register({
+    const data = await register({
       name: formData.get('name'),
       email: formData.get('email'),
       password,
       password_confirmation: confirmPassword,
     })
+
+    if (data) {
+      window.location.href = ROUTES.mails
+    }
   }
 
   return (
